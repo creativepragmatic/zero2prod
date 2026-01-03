@@ -6,3 +6,11 @@ database:
   username: "orville"
   password: "password"
   database_name: "newsletter"
+email_client:
+  base_url: "localhost"
+  sender_email: "orville@creativepragmatic.com"
+  # We are only setting the development value,
+  # we'll deal with the production token outside of version control
+  # (given that it's a sensitive secret!)
+  authorization_token: "4cd50b2d-f2cd-4bad-a91d-57979b4a85ad"
+  timeout_milliseconds: 10000
