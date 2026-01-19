@@ -2,11 +2,6 @@ use crate::helpers::spawn_app;
 use wiremock::matchers::{method, path};
 use wiremock::{Mock, ResponseTemplate};
 
-#[derive(serde::Deserialize)]
-pub struct Parameters {
-    subscription_token: String,
-}
-
 #[tokio::test]
 async fn the_link_returned_by_subscribe_returns_a_200_if_called() {
     // Arrange
